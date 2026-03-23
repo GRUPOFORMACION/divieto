@@ -14,15 +14,10 @@
   var TEXT_STEP = 10, TEXT_MIN = 80, TEXT_MAX = 150;
   var panelOpen = false;
 
-  /* ── Accessibility person icon (solid filled, white) ── */
+  /* ── Exact UserWay trigger icon ── */
   var PERSON_SVG =
-    '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="width:30px;height:30px">' +
-      '<circle cx="32" cy="10" r="8" fill="#fff"/>' +
-      '<rect x="28" y="20" width="8" height="20" rx="4" fill="#fff"/>' +
-      '<rect x="8"  y="22" width="20" height="7"  rx="3.5" fill="#fff"/>' +
-      '<rect x="36" y="22" width="20" height="7"  rx="3.5" fill="#fff"/>' +
-      '<rect x="26" y="38" width="6"  height="18" rx="3" fill="#fff"/>' +
-      '<rect x="32" y="38" width="6"  height="18" rx="3" fill="#fff"/>' +
+    '<svg focusable="false" width="23" height="28" viewBox="0 0 23 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation">' +
+      '<path d="M.018 8.639c.105-.595.65-.991 1.223-.877a53.94 53.94 0 0020.517 0c.625-.125 1.228.366 1.242 1.06.01.544-.402 1.003-.915 1.102-2.289.44-4.589.727-6.893.877-.948.063-1.647.948-1.54 1.932l.202 1.84c.314 2.87.958 5.69 1.919 8.399l1.26 3.553c.202.568-.076 1.197-.62 1.407a.994.994 0 01-.364.068c-.4 0-.768-.245-.944-.638l-.007.007-.325-.724a110.53 110.53 0 01-2.83-6.926.462.462 0 00-.878 0 105.146 105.146 0 01-2.832 6.917l-.308.68.005-.021a1.05 1.05 0 01-.98.705.994.994 0 01-.364-.068c-.544-.21-.821-.839-.62-1.407l1.26-3.553a37.235 37.235 0 001.92-8.403l.2-1.824c.107-.986-.59-1.881-1.54-1.943A55.94 55.94 0 01.86 9.914c-.57-.11-.947-.68-.841-1.275zM11.5 0c1.934 0 3.502 1.634 3.502 3.651 0 2.016-1.568 3.65-3.502 3.65-1.934 0-3.502-1.634-3.502-3.65C7.998 1.634 9.566 0 11.5 0z" fill="#fff" fill-rule="evenodd"/>' +
     '</svg>';
 
   function buildWidget() {
