@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Dining — Divieto Ristorante</title>
+  <meta name="description" content="Private dining spaces at Divieto Ristorante. From intimate wine cellars to expansive patios — exclusive venues for every occasion across four Florida locations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/private-dining.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="navbar scrolled" id="navbar">
+    <div class="navbar__inner">
+      <nav class="navbar__nav navbar__nav--left">
+        <a href="menus.html">Menus</a>
+        <a href="about.html">Our Story</a>
+        <a href="private-dining.html" class="active">Private Dining</a>
+      </nav>
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="Divieto Ristorante" />
+      </a>
+      <nav class="navbar__nav navbar__nav--right">
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="#inquiry-form" class="btn btn--outline btn--gold">Enquire Now</a>
+      </nav>
+      <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav>
+        <a href="menus.html">Menus</a>
+        <a href="about.html">Our Story</a>
+        <a href="private-dining.html">Private Dining</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="#inquiry-form" class="btn btn--gold">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="pd-hero" aria-label="Private Dining hero">
+      <div class="pd-hero__bg" style="background-image: url('assets/pd-space-3.jpg');"></div>
+      <div class="pd-hero__overlay"></div>
+      <div class="pd-hero__content">
+        <p class="label label--gold fade-in">Private Events &amp; Celebrations</p>
+        <h1 class="fade-in-2">Private<br><em>Dining</em></h1>
+        <p class="pd-hero__sub fade-in-3">From intimate dinners for 8<br>to exclusive buyouts for 200+</p>
+        <div class="pd-hero__cta fade-in-3">
+          <a href="#spaces-overview" class="btn btn--gold">Explore Our Spaces</a>
+          <a href="#inquiry-form" class="btn btn--text">Make an Enquiry</a>
+        </div>
+      </div>
+      <div class="pd-hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="pd-hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SPACES OVERVIEW — primero lo más importante
+    ═══════════════════════════════════════════════════════ -->
+    <section class="pd-overview" id="spaces-overview" aria-labelledby="pd-overview-heading">
+      <div class="pd-overview__header reveal">
+        <p class="label label--dark">All Locations · All Spaces</p>
+        <h2 id="pd-overview-heading">Find Your Perfect Space</h2>
+        <span class="gold-line gold-line--center"></span>
+        <p class="pd-overview__sub">Nine exclusive spaces across four locations. Choose by capacity, atmosphere or occasion — our team handles everything else.</p>
+      </div>
+
+      <!-- Location tabs -->
+      <div class="pd-overview__tabs reveal" style="--delay:.1s" role="tablist" aria-label="Select location">
+        <button class="pd-tab active" data-tab="doral" role="tab" aria-selected="true">Doral</button>
+        <button class="pd-tab" data-tab="estero" role="tab" aria-selected="false">Estero</button>
+        <button class="pd-tab" data-tab="aventura" role="tab" aria-selected="false">Aventura</button>
+        <button class="pd-tab" data-tab="nmb" role="tab" aria-selected="false">North Miami Beach</button>
+      </div>
+
+      <!-- ── DORAL spaces ── -->
+      <div class="pd-spaces active" id="spaces-doral">
+        <div class="pd-spaces__grid">
+
+          <article class="space-card reveal" style="--delay:0s">
+            <div class="space-card__img">
+              <img src="assets/pd-space-2.jpg" alt="Doral Indoor Terrace" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">36</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">Doral</span>
+                  <h3>Indoor Terrace</h3>
+                </div>
+                <span class="space-card__type">Semi-Private</span>
+              </div>
+              <p>A bright, airy semi-enclosed terrace with refined Italian décor. Ideal for celebratory lunches, family gatherings and milestone dinners in a relaxed yet elegant setting.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>36 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated dinner &amp; cocktail</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> Lunch &amp; dinner</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+          <article class="space-card reveal" style="--delay:.1s">
+            <div class="space-card__img">
+              <img src="assets/pd-space-6.jpg" alt="Doral VIP Room" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">14</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">Doral</span>
+                  <h3>VIP Room</h3>
+                </div>
+                <span class="space-card__type space-card__type--vip">VIP · Private</span>
+              </div>
+              <p>Our most intimate Doral space. A fully enclosed private room with dedicated service, designed for executive dinners, confidential meetings and occasions that demand total privacy.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>14 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated dinner · boardroom</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Fully enclosed &amp; private</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+          <article class="space-card space-card--large reveal" style="--delay:.2s">
+            <div class="space-card__img">
+              <img src="assets/location-doral2.jpg" alt="Doral Patio" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">66</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">Doral</span>
+                  <h3>Patio</h3>
+                </div>
+                <span class="space-card__type space-card__type--outdoor">Outdoor · Large</span>
+              </div>
+              <p>Doral's largest private space — an expansive open-air patio that transforms into an extraordinary event venue. Perfect for grand celebrations, corporate receptions and large family gatherings under the Florida sky.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>66 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated, cocktail or buffet</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a9 9 0 0 1 9 9c0 4-2 6.5-4.5 8.5L12 22l-4.5-2.5C5 17.5 3 15 3 11a9 9 0 0 1 9-9z"/></svg> Open air · full AV available</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+        </div>
+        <div class="pd-spaces__cta">
+          <p>Need the whole restaurant? <a href="#inquiry-form" class="link-gold">Ask about our full buyout →</a></p>
+        </div>
+      </div>
+
+      <!-- ── ESTERO spaces ── -->
+      <div class="pd-spaces" id="spaces-estero">
+        <div class="pd-spaces__grid pd-spaces__grid--2">
+
+          <article class="space-card reveal" style="--delay:0s">
+            <div class="space-card__img">
+              <img src="assets/pd-space-7.jpg" alt="Estero Indoor Terrace" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">26</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">Estero</span>
+                  <h3>Indoor Terrace</h3>
+                </div>
+                <span class="space-card__type">Semi-Private</span>
+              </div>
+              <p>A warm, glass-enclosed terrace with lush surroundings. Southwest Florida's most elegant semi-private setting for dinners, showers and milestone celebrations.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>26 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated dinner &amp; cocktail</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> Lunch &amp; dinner</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+          <article class="space-card reveal" style="--delay:.15s">
+            <div class="space-card__img">
+              <img src="assets/location-estero2.jpg" alt="Estero Private Dining Room" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">36</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">Estero</span>
+                  <h3>Private Dining Room</h3>
+                </div>
+                <span class="space-card__type space-card__type--vip">Fully Private</span>
+              </div>
+              <p>Estero's dedicated private dining room — fully enclosed, elegantly dressed and entirely yours. The region's finest setting for rehearsal dinners, corporate events and exclusive celebrations.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>36 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated dinner · cocktail reception</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Fully enclosed · AV on request</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+        </div>
+        <div class="pd-spaces__cta">
+          <p>Need the whole restaurant? <a href="#inquiry-form" class="link-gold">Ask about our full buyout →</a></p>
+        </div>
+      </div>
+
+      <!-- ── AVENTURA spaces ── -->
+      <div class="pd-spaces" id="spaces-aventura">
+        <div class="pd-spaces__grid">
+
+          <article class="space-card reveal" style="--delay:0s">
+            <div class="space-card__img">
+              <img src="assets/pd-space-9.jpg" alt="Aventura Wine Cellar" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">8</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">Aventura</span>
+                  <h3>Wine Cellar</h3>
+                </div>
+                <span class="space-card__type space-card__type--vip">VIP · Intimate</span>
+              </div>
+              <p>The most exclusive space in the Divieto portfolio. Our Aventura Wine Cellar accommodates just 8 guests in total seclusion — the ultimate setting for proposals, tasting menus and confidential dinners.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>8 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated tasting menu or dinner</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Maximum privacy · curated wine pairing</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+          <article class="space-card reveal" style="--delay:.1s">
+            <div class="space-card__img">
+              <img src="assets/pd-space-10.jpg" alt="Aventura VIP Room" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">14</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">Aventura</span>
+                  <h3>VIP Room</h3>
+                </div>
+                <span class="space-card__type space-card__type--vip">VIP · Private</span>
+              </div>
+              <p>Aventura's enclosed VIP Room offers complete privacy for up to 14 guests. Ideal for executive dinners, birthday celebrations and any occasion where discretion and elegance are paramount.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>14 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated dinner · boardroom</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Fully enclosed &amp; private</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+          <article class="space-card space-card--large reveal" style="--delay:.2s">
+            <div class="space-card__img">
+              <img src="assets/location-aventura.jpg" alt="Aventura Patio" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">70</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">Aventura</span>
+                  <h3>Patio</h3>
+                </div>
+                <span class="space-card__type space-card__type--outdoor">Outdoor · Large</span>
+              </div>
+              <p>Aventura's crowning event space. A stunning open-air patio that can accommodate up to 70 guests for cocktail receptions, rehearsal dinners and landmark corporate celebrations in one of South Florida's most prestigious addresses.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>70 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated, cocktail or mixed</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a9 9 0 0 1 9 9c0 4-2 6.5-4.5 8.5L12 22l-4.5-2.5C5 17.5 3 15 3 11a9 9 0 0 1 9-9z"/></svg> Open air · full AV available</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+        </div>
+        <div class="pd-spaces__cta">
+          <p>Need the whole restaurant? <a href="#inquiry-form" class="link-gold">Ask about our full buyout →</a></p>
+        </div>
+      </div>
+
+      <!-- ── NMB spaces ── -->
+      <div class="pd-spaces" id="spaces-nmb">
+        <div class="pd-spaces__grid pd-spaces__grid--2">
+
+          <article class="space-card reveal" style="--delay:0s">
+            <div class="space-card__img">
+              <img src="assets/pd-space-5.jpg" alt="North Miami Beach Private Dining Room" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">30</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">North Miami Beach</span>
+                  <h3>Private Dining Room</h3>
+                </div>
+                <span class="space-card__type space-card__type--vip">Fully Private</span>
+              </div>
+              <p>Our flagship private room. A beautifully appointed enclosed dining space at the NMB location — designed for celebrations, corporate dinners and gatherings that deserve the best.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>30 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated dinner · cocktail</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Fully enclosed · AV on request</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Reserve This Space</a>
+            </div>
+          </article>
+
+          <article class="space-card reveal" style="--delay:.15s">
+            <div class="space-card__img">
+              <img src="assets/pd-space-3.jpg" alt="North Miami Beach Full Buyout" loading="lazy" />
+              <div class="space-card__capacity">
+                <span class="space-card__num">180</span>
+                <span class="space-card__unit">guests</span>
+              </div>
+            </div>
+            <div class="space-card__body">
+              <div class="space-card__header">
+                <div>
+                  <span class="space-card__location">North Miami Beach</span>
+                  <h3>Full Restaurant</h3>
+                </div>
+                <span class="space-card__type space-card__type--buyout">Full Buyout</span>
+              </div>
+              <p>Exclusive use of the entire NMB flagship. The full dining room, bar and terrace — entirely yours. The most prestigious private event canvas in North Miami Beach, for up to 180 guests.</p>
+              <ul class="space-card__specs">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Up to <strong>180 guests</strong></li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg> Seated, cocktail or mixed format</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3l14 9-14 9V3z"/></svg> Full AV · dedicated tech support</li>
+              </ul>
+              <a href="#inquiry-form" class="btn btn--outline btn--gold">Enquire for Buyout</a>
+            </div>
+          </article>
+
+        </div>
+        <div class="pd-spaces__cta">
+          <p>Questions? Call us directly: <a href="tel:+13054000671" class="link-gold">(305) 400-0671</a></p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══ CAPACITY QUICK REFERENCE ═══ -->
+    <section class="pd-quickref reveal" aria-labelledby="pd-qr-heading">
+      <div class="pd-quickref__inner">
+        <div class="pd-quickref__label">
+          <p class="label">At a Glance</p>
+          <h2 id="pd-qr-heading">All Spaces &amp;<br>Capacities</h2>
+          <span class="gold-line"></span>
+          <p>Not sure which space is right for you? Browse all options or <a href="#inquiry-form" class="link-gold">speak to our team</a>.</p>
+        </div>
+        <div class="pd-quickref__table">
+          <div class="pd-qr-row pd-qr-row--head">
+            <span>Location</span>
+            <span>Space</span>
+            <span>Type</span>
+            <span>Capacity</span>
+          </div>
+          <div class="pd-qr-row">
+            <span>Doral</span>
+            <span>Indoor Terrace</span>
+            <span class="tag-semi">Semi-Private</span>
+            <strong>Up to 36</strong>
+          </div>
+          <div class="pd-qr-row">
+            <span>Doral</span>
+            <span>VIP Room</span>
+            <span class="tag-vip">VIP</span>
+            <strong>Up to 14</strong>
+          </div>
+          <div class="pd-qr-row">
+            <span>Doral</span>
+            <span>Patio</span>
+            <span class="tag-out">Outdoor</span>
+            <strong>Up to 66</strong>
+          </div>
+          <div class="pd-qr-row">
+            <span>Estero</span>
+            <span>Indoor Terrace</span>
+            <span class="tag-semi">Semi-Private</span>
+            <strong>Up to 26</strong>
+          </div>
+          <div class="pd-qr-row">
+            <span>Estero</span>
+            <span>Private Dining Room</span>
+            <span class="tag-vip">Fully Private</span>
+            <strong>Up to 36</strong>
+          </div>
+          <div class="pd-qr-row">
+            <span>Aventura</span>
+            <span>Wine Cellar</span>
+            <span class="tag-vip">VIP · Intimate</span>
+            <strong>Up to 8</strong>
+          </div>
+          <div class="pd-qr-row">
+            <span>Aventura</span>
+            <span>VIP Room</span>
+            <span class="tag-vip">VIP</span>
+            <strong>Up to 14</strong>
+          </div>
+          <div class="pd-qr-row">
+            <span>Aventura</span>
+            <span>Patio</span>
+            <span class="tag-out">Outdoor</span>
+            <strong>Up to 70</strong>
+          </div>
+          <div class="pd-qr-row">
+            <span>N. Miami Beach</span>
+            <span>Private Dining Room</span>
+            <span class="tag-vip">Fully Private</span>
+            <strong>Up to 30</strong>
+          </div>
+          <div class="pd-qr-row pd-qr-row--buyout">
+            <span>All Locations</span>
+            <span>Full Restaurant Buyout</span>
+            <span class="tag-buy">Buyout</span>
+            <strong>Up to 200+</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES ═══ -->
+    <section class="pd-services" aria-label="What we offer">
+      <div class="pd-services__inner">
+        <div class="pd-service reveal" style="--delay:0s">
+          <div class="pd-service__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 0v9l4 2"/></svg>
+          </div>
+          <h3>Bespoke Menus</h3>
+          <p>The chef designs exclusively around your event, dietary needs and preferences.</p>
+        </div>
+        <div class="pd-service reveal" style="--delay:.1s">
+          <div class="pd-service__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Dedicated Team</h3>
+          <p>A private captain and service crew attend exclusively to your party.</p>
+        </div>
+        <div class="pd-service reveal" style="--delay:.2s">
+          <div class="pd-service__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Bar Packages</h3>
+          <p>Italian wines, Champagne and signature cocktails — curated bar packages for every occasion.</p>
+        </div>
+        <div class="pd-service reveal" style="--delay:.3s">
+          <div class="pd-service__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>AV &amp; Décor</h3>
+          <p>Full audio-visual setup, custom florals and personalised menus coordinated for you.</p>
+        </div>
+        <div class="pd-service reveal" style="--delay:.4s">
+          <div class="pd-service__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>24h Response</h3>
+          <p>Your enquiry will receive a personalised reply within 24 hours. We are here to make it easy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ INQUIRY FORM ═══ -->
+    <section class="pd-form" id="inquiry-form" aria-labelledby="form-heading">
+      <div class="pd-form__inner">
+        <div class="pd-form__text reveal-left">
+          <p class="label">Start the Conversation</p>
+          <h2 id="form-heading">Plan Your<br>Private Event</h2>
+          <span class="gold-line"></span>
+          <p>Share your vision and our private events team will be in touch within 24 hours to craft your bespoke experience.</p>
+          <div class="pd-form__contacts">
+            <div class="pd-form__contact">
+              <span class="pd-form__contact-label">North Miami Beach</span>
+              <a href="tel:+13054000671" class="pd-form__tel">(305) 400-0671</a>
+            </div>
+            <div class="pd-form__contact">
+              <span class="pd-form__contact-label">Doral</span>
+              <a href="tel:+17865007340" class="pd-form__tel">(786) 500-7340</a>
+            </div>
+            <div class="pd-form__contact">
+              <span class="pd-form__contact-label">Estero</span>
+              <a href="tel:+12394503636" class="pd-form__tel">(239) 450-3636</a>
+            </div>
+            <div class="pd-form__contact">
+              <span class="pd-form__contact-label">Aventura</span>
+              <a href="tel:+17862629911" class="pd-form__tel">(786) 262-9911</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="form reveal-right" style="--delay:.1s" action="#" method="POST" aria-label="Private dining enquiry">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="f-name">First Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="f-name" name="first_name" required autocomplete="given-name" placeholder="Jane" />
+            </div>
+            <div class="form__group">
+              <label for="f-lname">Last Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="f-lname" name="last_name" required autocomplete="family-name" placeholder="Smith" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="f-email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="jane@company.com" />
+            </div>
+            <div class="form__group">
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="+1 (305) 000-0000" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="f-location">Location <span aria-hidden="true">*</span></label>
+              <select id="f-location" name="location" required>
+                <option value="" disabled selected>Select a location</option>
+                <option>Doral — Indoor Terrace (up to 36)</option>
+                <option>Doral — VIP Room (up to 14)</option>
+                <option>Doral — Patio (up to 66)</option>
+                <option>Estero — Indoor Terrace (up to 26)</option>
+                <option>Estero — Private Dining Room (up to 36)</option>
+                <option>Aventura — Wine Cellar (up to 8)</option>
+                <option>Aventura — VIP Room (up to 14)</option>
+                <option>Aventura — Patio (up to 70)</option>
+                <option>North Miami Beach — Private Dining Room (up to 30)</option>
+                <option>Full Restaurant Buyout — Any location</option>
+                <option>Not sure — advise me</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="f-guests">Number of Guests <span aria-hidden="true">*</span></label>
+              <input type="number" id="f-guests" name="guests" min="2" max="300" required placeholder="e.g. 24" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="f-date">Preferred Date</label>
+              <input type="date" id="f-date" name="date" />
+            </div>
+            <div class="form__group">
+              <label for="f-type">Event Type <span aria-hidden="true">*</span></label>
+              <select id="f-type" name="event_type" required>
+                <option value="" disabled selected>Select event type</option>
+                <option>Corporate Dinner / Client Entertainment</option>
+                <option>Birthday / Anniversary</option>
+                <option>Rehearsal Dinner</option>
+                <option>Proposal</option>
+                <option>Full Restaurant Buyout</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__group form__group--full">
+            <label for="f-message">Tell us about your event</label>
+            <textarea id="f-message" name="message" rows="4" placeholder="Dietary requirements, special requests, décor ideas, preferred menu style..."></textarea>
+          </div>
+          <div class="form__footer">
+            <button type="submit" class="btn btn--gold">Send Enquiry →</button>
+            <p class="form__note">We respond within 24 hours. Your details are kept strictly confidential.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html"><img src="assets/logo.png" alt="Divieto Ristorante" class="footer__logo" /></a>
+        <p class="footer__tagline">Italian Cuisine · Est. Miami, Florida</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/divietoristorante" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/divietoristorante" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Discover</p>
+          <a href="menus.html">Menus</a>
+          <a href="about.html">Our Story</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="private-dining.html">Private Dining</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Locations</p>
+          <a href="index.html#locations">North Miami Beach</a>
+          <a href="index.html#locations">Doral</a>
+          <a href="index.html#locations">Estero</a>
+          <a href="index.html#locations">Aventura</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Contact</p>
+          <a href="tel:+13054000671">(305) 400-0671</a>
+          <a href="mailto:info@divietoristorante.com">info@divietoristorante.com</a>
+          <a href="#inquiry-form">Private Dining Enquiry</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Divieto Ristorante. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Use</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/private-dining.js"></script>
+</body>
+</html>

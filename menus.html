@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menus — Divieto Ristorante</title>
+  <meta name="description" content="Explore Divieto Ristorante's full menus: Restaurant Menu, Chef's Specials, Wine List, Cocktails, Desserts and Catering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <header class="navbar scrolled" id="navbar">
+    <div class="navbar__inner">
+      <nav class="navbar__nav navbar__nav--left">
+        <a href="menus.html" class="active">Menus</a>
+        <a href="about.html">Our Story</a>
+        <a href="private-dining.html">Private Dining</a>
+      </nav>
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="Divieto Ristorante" />
+      </a>
+      <nav class="navbar__nav navbar__nav--right">
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--outline btn--gold">Reserve a Table</a>
+      </nav>
+      <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav>
+        <a href="menus.html">Menus</a>
+        <a href="about.html">Our Story</a>
+        <a href="private-dining.html">Private Dining</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero page-hero--short">
+      <div class="page-hero__bg" style="background-image: url('assets/dish-ruota-parmigiano.jpg');"></div>
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content fade-in">
+        <p class="label">Divieto Ristorante</p>
+        <h1>Our Menus</h1>
+        <p>Crafted from scratch · Over 70 dishes</p>
+      </div>
+    </section>
+
+    <section class="menu-categories">
+      <div class="menu-cat-intro reveal">
+        <p class="label">Divieto Ristorante</p>
+        <h2>A Menu for Every Desire</h2>
+        <span class="gold-line gold-line--center"></span>
+      </div>
+      <div class="menu-categories__grid">
+
+        <a href="#restaurant-menu" class="menu-cat reveal" style="--delay:0s">
+          <div class="menu-cat__img">
+            <img src="assets/dish-ruota-parmigiano.jpg" alt="Restaurant Menu" loading="lazy" />
+          </div>
+          <div class="menu-cat__overlay"></div>
+          <div class="menu-cat__info">
+            <div>
+              <p class="label label--gold">Full Selection</p>
+              <h2>Restaurant Menu</h2>
+              <p>From antipasti to secondi — the full Divieto experience. Over 70 dishes made from scratch.</p>
+            </div>
+            <span class="btn btn--outline btn--gold menu-cat__btn">View Menu</span>
+          </div>
+        </a>
+
+        <a href="#chefs-specials" class="menu-cat reveal" style="--delay:.1s">
+          <div class="menu-cat__img">
+            <img src="assets/dish-tomahawk.jpg" alt="Chef's Specials" loading="lazy" />
+          </div>
+          <div class="menu-cat__overlay"></div>
+          <div class="menu-cat__info">
+            <div>
+              <p class="label label--gold">Seasonal</p>
+              <h2>Chef's Specials</h2>
+              <p>Seasonal creations from our executive chef, changing weekly.</p>
+            </div>
+            <span class="btn btn--outline btn--gold menu-cat__btn">View Specials</span>
+          </div>
+        </a>
+
+        <a href="#wine-list" class="menu-cat reveal" style="--delay:.2s">
+          <div class="menu-cat__img">
+            <img src="assets/cocktails-signature.jpg" alt="Wine List" loading="lazy" />
+          </div>
+          <div class="menu-cat__overlay"></div>
+          <div class="menu-cat__info">
+            <div>
+              <p class="label label--gold">Cellar</p>
+              <h2>Wine List</h2>
+              <p>Italian, American and international selections curated by our sommelier.</p>
+            </div>
+            <span class="btn btn--outline btn--gold menu-cat__btn">View Wines</span>
+          </div>
+        </a>
+
+        <a href="#cocktails" class="menu-cat reveal" style="--delay:.3s">
+          <div class="menu-cat__img">
+            <img src="assets/cocktail-old-fashioned.jpg" alt="Cocktails" loading="lazy" />
+          </div>
+          <div class="menu-cat__overlay"></div>
+          <div class="menu-cat__info">
+            <div>
+              <p class="label label--gold">The Bar</p>
+              <h2>Cocktails</h2>
+              <p>1920s Prohibition-inspired creations and timeless American classics.</p>
+            </div>
+            <span class="btn btn--outline btn--gold menu-cat__btn">View Cocktails</span>
+          </div>
+        </a>
+
+        <a href="#desserts" class="menu-cat reveal" style="--delay:.4s">
+          <div class="menu-cat__img">
+            <img src="assets/dessert-tiramisu.jpg" alt="Desserts" loading="lazy" />
+          </div>
+          <div class="menu-cat__overlay"></div>
+          <div class="menu-cat__info">
+            <div>
+              <p class="label label--gold">Dolce</p>
+              <h2>Desserts</h2>
+              <p>The sweet Italian finish — tiramisù, crème brûlée and more.</p>
+            </div>
+            <span class="btn btn--outline btn--gold menu-cat__btn">View Desserts</span>
+          </div>
+        </a>
+
+        <a href="private-dining.html" class="menu-cat reveal" style="--delay:.5s">
+          <div class="menu-cat__img">
+            <img src="assets/dining-main.jpg" alt="Catering & Events" loading="lazy" />
+          </div>
+          <div class="menu-cat__overlay"></div>
+          <div class="menu-cat__info">
+            <div>
+              <p class="label label--gold">Events</p>
+              <h2>Catering &amp; Events</h2>
+              <p>Personalized menus for private and corporate events. Bespoke service.</p>
+            </div>
+            <span class="btn btn--outline btn--gold menu-cat__btn">Inquire</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Sample menu items section -->
+    <section class="menu-section" id="restaurant-menu" aria-labelledby="rm-heading">
+      <div class="menu-section__inner">
+        <div class="menu-section__header reveal">
+          <p class="label">To Start</p>
+          <h2 id="rm-heading">Antipasti</h2>
+        </div>
+        <div class="menu-items reveal">
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Antipasto della Casa</h3>
+              <span class="menu-item__price">$24</span>
+            </div>
+            <p>Artisan charcuterie, fresh burrata, roasted peppers, marinated olives, grilled crostini</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Salmon Carpaccio</h3>
+              <span class="menu-item__price">$22</span>
+            </div>
+            <p>Thinly sliced Atlantic salmon, citrus cure, truffle oil, capers, micro herbs</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Polpo alla Griglia</h3>
+              <span class="menu-item__price">$26</span>
+            </div>
+            <p>Charred Mediterranean octopus, Calabrian chili, fingerling potato, salsa verde</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Burrata con Prosciutto</h3>
+              <span class="menu-item__price">$20</span>
+            </div>
+            <p>Imported burrata, 24-month Prosciutto di Parma, heirloom tomato, basil oil</p>
+          </div>
+        </div>
+
+        <div class="menu-section__header reveal" style="margin-top: 4rem;">
+          <p class="label">Handmade Pasta</p>
+          <h2>Primi Piatti</h2>
+        </div>
+        <div class="menu-items reveal">
+          <div class="menu-item menu-item--featured">
+            <div class="menu-item__top">
+              <h3>Ruota di Parmigiano <span class="menu-item__tag">Signature</span></h3>
+              <span class="menu-item__price">$38</span>
+            </div>
+            <p>Fettuccine Alfredo finished tableside inside a 30-month aged Parmigiano-Reggiano wheel. Rich, indulgent, unforgettable.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Lobster Ravioli</h3>
+              <span class="menu-item__price">$42</span>
+            </div>
+            <p>Hand-rolled pasta, Maine lobster filling, saffron bisque, chive oil</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Rigatoni alla Vodka</h3>
+              <span class="menu-item__price">$28</span>
+            </div>
+            <p>House rigatoni, spicy tomato-vodka cream sauce, crispy guanciale, Parmigiano</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Tagliatelle al Tartufo</h3>
+              <span class="menu-item__price">$44</span>
+            </div>
+            <p>Egg tagliatelle, black truffle cream, mushroom medley, aged Pecorino</p>
+          </div>
+        </div>
+
+        <div class="menu-section__header reveal" style="margin-top: 4rem;">
+          <p class="label">From Land &amp; Sea</p>
+          <h2>Secondi Piatti</h2>
+        </div>
+        <div class="menu-items reveal">
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Tomahawk Ribeye <span class="menu-item__tag">For Two</span></h3>
+              <span class="menu-item__price">$145</span>
+            </div>
+            <p>40oz dry-aged prime Tomahawk, butter-basted with herbs, carved tableside. Served with roasted fingerlings and grilled broccolini.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Filet Mignon</h3>
+              <span class="menu-item__price">$68</span>
+            </div>
+            <p>8oz center-cut filet, truffle butter, asparagus, red wine demi-glace</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Chilean Sea Bass</h3>
+              <span class="menu-item__price">$52</span>
+            </div>
+            <p>Pan-seared, lemon-caper butter, caramelized fennel, broccolini, saffron emulsion</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__top">
+              <h3>Branzino al Limone</h3>
+              <span class="menu-item__price">$46</span>
+            </div>
+            <p>Whole roasted Mediterranean sea bass, lemon, garlic, capers, fresh herbs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reserve CTA strip -->
+    <div class="cta-strip reveal">
+      <p>Ready to experience Divieto?</p>
+      <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html"><img src="assets/logo.png" alt="Divieto Ristorante" class="footer__logo" /></a>
+        <p class="footer__tagline">Italian Cuisine · Est. Miami, Florida</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/divietoristorante" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/divietoristorante" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Discover</p>
+          <a href="menus.html">Menus</a>
+          <a href="about.html">Our Story</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="private-dining.html">Private Dining</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Locations</p>
+          <a href="index.html#locations">North Miami Beach</a>
+          <a href="index.html#locations">Doral</a>
+          <a href="index.html#locations">Estero</a>
+          <a href="index.html#locations">Aventura</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Contact</p>
+          <a href="tel:+13054000671">(305) 400-0671</a>
+          <a href="mailto:info@divietoristorante.com">info@divietoristorante.com</a>
+          <a href="https://www.opentable.com" target="_blank" rel="noopener">Reserve Online</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Divieto Ristorante. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Use</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

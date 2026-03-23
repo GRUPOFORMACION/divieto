@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divieto Ristorante — Italian Cuisine · Miami</title>
+  <meta name="description" content="Divieto Ristorante — Authentic Italian-American cuisine inspired by the 1920s Prohibition era. Four locations in Miami: North Miami Beach, Doral, Estero & Aventura." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <nav class="navbar__nav navbar__nav--left" aria-label="Primary left">
+        <a href="menus.html">Menus</a>
+        <a href="about.html">Our Story</a>
+        <a href="private-dining.html">Private Dining</a>
+      </nav>
+
+      <a href="index.html" class="navbar__logo" aria-label="Divieto Ristorante home">
+        <img src="assets/logo.png" alt="Divieto Ristorante" />
+      </a>
+
+      <nav class="navbar__nav navbar__nav--right" aria-label="Primary right">
+        <a href="gallery.html">Gallery</a>
+        <a href="#locations">Locations</a>
+        <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--outline btn--gold">Reserve a Table</a>
+      </nav>
+
+      <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <a href="menus.html">Menus</a>
+        <a href="about.html">Our Story</a>
+        <a href="private-dining.html">Private Dining</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#locations">Locations</a>
+        <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO CAROUSEL ═══ -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__slides">
+        <div class="hero__slide active" style="background-image: url('assets/hero-dining-room.jpg');"
+          role="img" aria-label="Divieto Ristorante dining room"></div>
+        <div class="hero__slide" style="background-image: url('assets/dining-main.jpg');"
+          role="img" aria-label="Divieto Ristorante main dining room"></div>
+        <div class="hero__slide" style="background-image: url('assets/dish-ruota-parmigiano.jpg');"
+          role="img" aria-label="Ruota di Parmigiano signature dish"></div>
+        <div class="hero__slide" style="background-image: url('assets/cocktails-signature.jpg');"
+          role="img" aria-label="Signature cocktails"></div>
+        <div class="hero__slide" style="background-image: url('assets/dish-tomahawk.jpg');"
+          role="img" aria-label="Tomahawk steak"></div>
+      </div>
+      <div class="hero__overlay"></div>
+
+      <!-- Contenido central — título y subtítulo -->
+      <div class="hero__content">
+        <p class="hero__eyebrow fade-in">Italian Cuisine · Est. Miami, Florida</p>
+        <h1 class="hero__title fade-in-2">Where Every Flavor<br><em>Tells a Story</em></h1>
+        <p class="hero__sub fade-in-3">Authentic Italian tradition. The spirit of 1920s America.</p>
+      </div>
+
+      <!-- Barra inferior: zona dedicada — dots izq / CTAs centro / scroll der -->
+      <div class="hero__bar fade-in-3">
+        <!-- Dots (izquierda) -->
+        <div class="hero__dots" role="tablist" aria-label="Carousel navigation">
+          <button class="hero__dot active" role="tab" aria-selected="true" aria-label="Slide 1" data-slide="0"></button>
+          <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 2" data-slide="1"></button>
+          <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 3" data-slide="2"></button>
+          <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 4" data-slide="3"></button>
+          <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 5" data-slide="4"></button>
+        </div>
+
+        <!-- CTAs (centro) -->
+        <div class="hero__cta">
+          <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+          <a href="menus.html" class="btn btn--text">Explore Menus</a>
+        </div>
+
+        <!-- Scroll (derecha) -->
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BRAND STATEMENT ═══ -->
+    <section class="brand reveal" aria-labelledby="brand-heading">
+      <div class="brand__inner">
+        <div class="brand__emblem reveal-left" style="--delay:.15s">
+          <img src="assets/emblem.png" alt="Divieto Ristorante crest" />
+        </div>
+        <div class="brand__text reveal-right" style="--delay:.25s">
+          <p class="label">Est. Miami, Florida</p>
+          <h2 id="brand-heading" class="brand__quote">
+            <em>"La cucina è arte.<br>Il divieto, leggenda."</em>
+          </h2>
+          <span class="gold-line"></span>
+          <p class="brand__body">
+            Divieto — Italian for "prohibition" — is a love letter to two worlds: the timeless
+            craft of Italian cuisine and the bold spirit of 1920s America. More than 70 dishes
+            crafted from scratch, each one a celebration of local ingredients, old-world technique
+            and the kind of warmth that turns dinner into memory.
+          </p>
+          <a href="about.html" class="btn btn--outline btn--dark">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SIGNATURE DISHES ═══ -->
+    <section class="signatures" aria-labelledby="signatures-heading">
+      <div class="signatures__header reveal">
+        <p class="label">From Our Kitchen</p>
+        <h2 id="signatures-heading">Crafted with Passion</h2>
+        <span class="gold-line gold-line--center"></span>
+      </div>
+
+      <div class="dish-feature">
+        <div class="dish-feature__img reveal-left" style="--delay:.1s">
+          <img src="assets/dish-ruota-parmigiano.jpg"
+            alt="Ruota di Parmigiano — Fettuccine Alfredo finished tableside in a wheel of Parmigiano-Reggiano"
+            loading="lazy" />
+        </div>
+        <div class="dish-feature__info reveal-right" style="--delay:.2s">
+          <p class="label">Signature · Must Try</p>
+          <h3>Ruota di<br>Parmigiano</h3>
+          <span class="gold-line"></span>
+          <p class="dish-feature__desc">Fettuccine Alfredo finished tableside inside a wheel of
+          30-month aged Parmigiano-Reggiano. The heat melts the cheese into the pasta, creating
+          a sauce unlike anything else — a ritual as much as a dish.</p>
+          <a href="menus.html" class="btn btn--outline btn--gold">View Full Menu</a>
+        </div>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card reveal" style="--delay:0s">
+          <div class="dish-card__img">
+            <img src="assets/dish-tomahawk.jpg" alt="Tomahawk Ribeye" loading="lazy" />
+            <div class="dish-card__overlay">
+              <a href="menus.html" class="btn btn--outline btn--gold">View Menu</a>
+            </div>
+          </div>
+          <div class="dish-card__info">
+            <h3>Tomahawk</h3>
+            <p>40oz dry-aged, butter-basted, carved tableside</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:.08s">
+          <div class="dish-card__img">
+            <img src="assets/dish-lobster-ravioli.jpg" alt="Lobster Ravioli" loading="lazy" />
+            <div class="dish-card__overlay">
+              <a href="menus.html" class="btn btn--outline btn--gold">View Menu</a>
+            </div>
+          </div>
+          <div class="dish-card__info">
+            <h3>Lobster Ravioli</h3>
+            <p>Hand-rolled pasta, Maine lobster, saffron bisque</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:.16s">
+          <div class="dish-card__img">
+            <img src="assets/dish-sea-bass.jpg" alt="Chilean Sea Bass" loading="lazy" />
+            <div class="dish-card__overlay">
+              <a href="menus.html" class="btn btn--outline btn--gold">View Menu</a>
+            </div>
+          </div>
+          <div class="dish-card__info">
+            <h3>Chilean Sea Bass</h3>
+            <p>Pan-seared, lemon-caper butter, broccolini</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:.24s">
+          <div class="dish-card__img">
+            <img src="assets/dish-polpo.jpg" alt="Polpo alla Griglia" loading="lazy" />
+            <div class="dish-card__overlay">
+              <a href="menus.html" class="btn btn--outline btn--gold">View Menu</a>
+            </div>
+          </div>
+          <div class="dish-card__info">
+            <h3>Polpo alla Griglia</h3>
+            <p>Charred octopus, Calabrian chili, fingerling potato</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:.32s">
+          <div class="dish-card__img">
+            <img src="assets/dish-salmon-carpaccio.jpg" alt="Salmon Carpaccio" loading="lazy" />
+            <div class="dish-card__overlay">
+              <a href="menus.html" class="btn btn--outline btn--gold">View Menu</a>
+            </div>
+          </div>
+          <div class="dish-card__info">
+            <h3>Salmon Carpaccio</h3>
+            <p>Citrus cure, truffle oil, capers, micro herbs</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:.4s">
+          <div class="dish-card__img">
+            <img src="assets/dish-antipasto.jpg" alt="Antipasto della Casa" loading="lazy" />
+            <div class="dish-card__overlay">
+              <a href="menus.html" class="btn btn--outline btn--gold">View Menu</a>
+            </div>
+          </div>
+          <div class="dish-card__info">
+            <h3>Antipasto della Casa</h3>
+            <p>Artisan charcuterie, burrata, roasted peppers</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section class="experience" aria-labelledby="experience-heading">
+      <div class="experience__row experience__row--dark">
+        <div class="experience__img reveal-left">
+          <img src="assets/dining-doral.jpg" alt="Divieto Ristorante Doral dining room" loading="lazy" />
+        </div>
+        <div class="experience__text reveal-right" style="--delay:.15s">
+          <p class="label">The Atmosphere</p>
+          <h2 id="experience-heading">A Room That Speaks</h2>
+          <span class="gold-line"></span>
+          <p>Velvet, candlelight and the low murmur of satisfied guests. Every corner pays
+          homage to the Prohibition era — intimate booths, dark wood, and art-deco details
+          that make every evening feel like a scene from a classic film.</p>
+          <a href="about.html" class="btn btn--outline btn--gold">Our Concept</a>
+        </div>
+      </div>
+      <div class="experience__row experience__row--light">
+        <div class="experience__text reveal-left" style="--delay:.1s">
+          <p class="label label--dark">The Craft</p>
+          <h2>More Than 70 Dishes,<br>Made From Scratch</h2>
+          <span class="gold-line"></span>
+          <p>Every sauce, every pasta, every dessert prepared in-house using locally sourced
+          ingredients and old-world Italian techniques. Generations of culinary tradition, brought
+          to your table with deep respect for the ingredients that make it possible.</p>
+          <a href="menus.html" class="btn btn--outline btn--dark">Explore the Menu</a>
+        </div>
+        <div class="experience__img reveal-right" style="--delay:.2s">
+          <img src="assets/dining-estero.jpg" alt="Divieto Ristorante Estero dining room" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ COCKTAILS ═══ -->
+    <section class="cocktails reveal" aria-labelledby="cocktails-heading">
+      <div class="cocktails__bg" style="background-image: url('assets/cocktails-signature.jpg');"></div>
+      <div class="cocktails__overlay"></div>
+      <div class="cocktails__content">
+        <p class="label label--gold">The Bar</p>
+        <h2 id="cocktails-heading">The Art of<br>the Cocktail</h2>
+        <span class="gold-line"></span>
+        <p class="cocktails__sub">1920s-inspired creations · Italian wines · American classics</p>
+        <a href="menus.html#cocktails" class="btn btn--outline btn--gold">Cocktail Menu</a>
+      </div>
+      <div class="cocktails__aside">
+        <img src="assets/cocktail-old-fashioned.jpg" alt="Old Fashioned cocktail" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ═══ DESSERTS ═══ -->
+    <section class="desserts" aria-labelledby="desserts-heading">
+      <div class="desserts__header reveal">
+        <p class="label label--dark">Dolce Vita</p>
+        <h2 id="desserts-heading">The Sweet Finish</h2>
+        <span class="gold-line gold-line--center"></span>
+      </div>
+      <div class="desserts__grid">
+        <div class="desserts__card reveal">
+          <img src="assets/dessert-tiramisu.jpg" alt="Classic Tiramisù" loading="lazy" />
+          <div class="desserts__card-info">
+            <h3>Tiramisù Classico</h3>
+            <p>Mascarpone, espresso, Savoiardi, dark cocoa</p>
+          </div>
+        </div>
+        <div class="desserts__card reveal" style="--delay:.1s">
+          <img src="assets/dessert-creme-brulee.jpg" alt="Crème Brûlée" loading="lazy" />
+          <div class="desserts__card-info">
+            <h3>Crème Brûlée</h3>
+            <p>Tahitian vanilla, caramelized crust, fresh berries</p>
+          </div>
+        </div>
+        <div class="desserts__card reveal" style="--delay:.2s">
+          <img src="assets/dish-burrata-pizza.jpg" alt="Burrata Pizza" loading="lazy" />
+          <div class="desserts__card-info">
+            <h3>Burrata Pizza</h3>
+            <p>Wood-fired crust, fresh burrata, cherry tomato, basil oil</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PRIVATE DINING CTA ═══ -->
+    <section class="private-cta" aria-labelledby="private-cta-heading">
+      <div class="private-cta__bg" style="background-image: url('assets/dining-main.jpg');"></div>
+      <div class="private-cta__overlay"></div>
+      <div class="private-cta__content reveal">
+        <p class="label label--gold">Private Events</p>
+        <h2 id="private-cta-heading">Make Your Occasion<br>Unforgettable</h2>
+        <span class="gold-line"></span>
+        <p>From intimate celebrations to corporate gatherings. Personalized menus,
+        dedicated service, and the unmistakable Divieto atmosphere for your most
+        important moments.</p>
+        <a href="private-dining.html" class="btn btn--gold">Enquire Now</a>
+      </div>
+    </section>
+
+    <!-- ═══ LOCATIONS ═══ -->
+    <section class="locations" id="locations" aria-labelledby="locations-heading">
+      <div class="locations__header reveal">
+        <p class="label">Find Us</p>
+        <h2 id="locations-heading">Four Locations.<br>One Experience.</h2>
+        <span class="gold-line gold-line--center"></span>
+      </div>
+
+      <div class="locations__tabs reveal" style="--delay:.1s" role="tablist" aria-label="Select location">
+        <button class="locations__tab active" data-location="nmb" role="tab" aria-selected="true" aria-controls="panel-nmb">North Miami Beach</button>
+        <button class="locations__tab" data-location="doral" role="tab" aria-selected="false" aria-controls="panel-doral">Doral</button>
+        <button class="locations__tab" data-location="estero" role="tab" aria-selected="false" aria-controls="panel-estero">Estero</button>
+        <button class="locations__tab" data-location="aventura" role="tab" aria-selected="false" aria-controls="panel-aventura">Aventura</button>
+      </div>
+
+      <div class="locations__panels">
+
+        <div class="location-panel active" id="panel-nmb" role="tabpanel" aria-labelledby="tab-nmb">
+          <div class="location-panel__img">
+            <img src="assets/location-nmb.jpg" alt="Divieto North Miami Beach interior" loading="lazy" />
+            <div class="location-panel__img-overlay"></div>
+          </div>
+          <div class="location-panel__info">
+            <span class="location-panel__num">01</span>
+            <p class="label">North Miami Beach</p>
+            <span class="location-panel__tag">Flagship</span>
+            <h3>North Miami<br>Beach</h3>
+            <address>
+              <p class="location-panel__address">1665 NE 164th St<br>North Miami Beach, FL 33162</p>
+              <a href="tel:+13054000671" class="location-panel__phone">(305) 400-0671</a>
+            </address>
+            <p class="location-panel__hours">Monday – Sunday · 12:00 pm – 11:00 pm</p>
+            <div class="location-panel__actions">
+              <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+              <a href="https://maps.google.com/?q=1665+NE+164th+St+North+Miami+Beach+FL" target="_blank" rel="noopener" class="btn btn--outline btn--gold">Get Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-panel" id="panel-doral" role="tabpanel" aria-labelledby="tab-doral">
+          <div class="location-panel__img">
+            <img src="assets/location-doral2.jpg" alt="Divieto Doral interior" loading="lazy" />
+            <div class="location-panel__img-overlay"></div>
+          </div>
+          <div class="location-panel__info">
+            <span class="location-panel__num">02</span>
+            <p class="label">Doral</p>
+            <span class="location-panel__tag">Doral · FL</span>
+            <h3>Doral</h3>
+            <address>
+              <p class="location-panel__address">8405 NW 53rd St, Suite 102<br>Doral, FL 33166</p>
+              <a href="tel:+17865007340" class="location-panel__phone">(786) 500-7340</a>
+            </address>
+            <p class="location-panel__hours">Monday – Sunday · 12:00 pm – 11:00 pm</p>
+            <div class="location-panel__actions">
+              <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+              <a href="https://maps.google.com/?q=8405+NW+53rd+St+Doral+FL" target="_blank" rel="noopener" class="btn btn--outline btn--gold">Get Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-panel" id="panel-estero" role="tabpanel" aria-labelledby="tab-estero">
+          <div class="location-panel__img">
+            <img src="assets/location-estero2.jpg" alt="Divieto Estero interior" loading="lazy" />
+            <div class="location-panel__img-overlay"></div>
+          </div>
+          <div class="location-panel__info">
+            <span class="location-panel__num">03</span>
+            <p class="label">Estero</p>
+            <span class="location-panel__tag">Estero · FL</span>
+            <h3>Estero</h3>
+            <address>
+              <p class="location-panel__address">19800 Village Center Dr<br>Estero, FL 33928</p>
+              <a href="tel:+12394503636" class="location-panel__phone">(239) 450-3636</a>
+            </address>
+            <p class="location-panel__hours">Monday – Sunday · 12:00 pm – 10:00 pm</p>
+            <div class="location-panel__actions">
+              <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+              <a href="https://maps.google.com/?q=19800+Village+Center+Dr+Estero+FL" target="_blank" rel="noopener" class="btn btn--outline btn--gold">Get Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-panel" id="panel-aventura" role="tabpanel" aria-labelledby="tab-aventura">
+          <div class="location-panel__img">
+            <img src="assets/location-aventura.jpg" alt="Divieto Aventura interior" loading="lazy" />
+            <div class="location-panel__img-overlay"></div>
+          </div>
+          <div class="location-panel__info">
+            <span class="location-panel__num">04</span>
+            <p class="label">Aventura</p>
+            <span class="location-panel__tag">Aventura · FL</span>
+            <h3>Aventura</h3>
+            <address>
+              <p class="location-panel__address">2680 NE 207th St<br>Aventura, FL 33180</p>
+              <a href="tel:+17862629911" class="location-panel__phone">(786) 262-9911</a>
+            </address>
+            <p class="location-panel__hours">Monday – Sunday · 12:00 pm – 11:00 pm</p>
+            <div class="location-panel__actions">
+              <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+              <a href="https://maps.google.com/?q=2680+NE+207th+St+Aventura+FL" target="_blank" rel="noopener" class="btn btn--outline btn--gold">Get Directions</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" aria-label="Divieto Ristorante home">
+          <img src="assets/logo.png" alt="Divieto Ristorante" class="footer__logo" />
+        </a>
+        <p class="footer__tagline">Italian Cuisine · Est. Miami, Florida</p>
+        <div class="footer__social" aria-label="Social media">
+          <a href="https://www.instagram.com/divietoristorante" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/divietoristorante" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@divietoristorante" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Discover</p>
+          <a href="menus.html">Menus</a>
+          <a href="about.html">Our Story</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="private-dining.html">Private Dining</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Locations</p>
+          <a href="#locations">North Miami Beach</a>
+          <a href="#locations">Doral</a>
+          <a href="#locations">Estero</a>
+          <a href="#locations">Aventura</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Contact</p>
+          <a href="tel:+13054000671">(305) 400-0671</a>
+          <a href="mailto:info@divietoristorante.com">info@divietoristorante.com</a>
+          <a href="https://www.opentable.com" target="_blank" rel="noopener">Reserve Online</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Divieto Ristorante. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Use</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

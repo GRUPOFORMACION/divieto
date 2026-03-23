@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Divieto Ristorante</title>
+  <meta name="description" content="Gallery of dishes, cocktails, dining rooms and experiences at Divieto Ristorante — Miami." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <header class="navbar scrolled" id="navbar">
+    <div class="navbar__inner">
+      <nav class="navbar__nav navbar__nav--left">
+        <a href="menus.html">Menus</a>
+        <a href="about.html">Our Story</a>
+        <a href="private-dining.html">Private Dining</a>
+      </nav>
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="Divieto Ristorante" />
+      </a>
+      <nav class="navbar__nav navbar__nav--right">
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--outline btn--gold">Reserve a Table</a>
+      </nav>
+      <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav>
+        <a href="menus.html">Menus</a>
+        <a href="about.html">Our Story</a>
+        <a href="private-dining.html">Private Dining</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="https://www.opentable.com" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero page-hero--short">
+      <div class="page-hero__bg" style="background-image: url('assets/dining-doral.jpg');"></div>
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content fade-in">
+        <p class="label">Visual Journey</p>
+        <h1>Gallery</h1>
+        <p>Food, atmosphere & the art of the table</p>
+      </div>
+    </section>
+
+    <!-- Filter tabs -->
+    <section class="gallery-section" aria-labelledby="gallery-heading">
+      <div class="gallery-filters reveal" role="tablist" aria-label="Filter gallery by category">
+        <button class="gallery-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="gallery-filter" data-filter="food" role="tab" aria-selected="false">Food</button>
+        <button class="gallery-filter" data-filter="cocktails" role="tab" aria-selected="false">Cocktails</button>
+        <button class="gallery-filter" data-filter="dining" role="tab" aria-selected="false">Dining Room</button>
+      </div>
+
+      <div class="masonry" id="gallery-grid" aria-label="Photo gallery">
+        <div class="masonry__item reveal" data-cat="food">
+          <img src="assets/dish-ruota-parmigiano.jpg" alt="Ruota di Parmigiano — signature pasta dish" loading="lazy" />
+        </div>
+        <div class="masonry__item masonry__item--tall reveal" data-cat="dining" style="--delay:.05s">
+          <img src="assets/dining-doral.jpg" alt="Divieto Doral dining room" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.1s">
+          <img src="assets/dish-tomahawk.jpg" alt="Tomahawk steak" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="cocktails" style="--delay:.15s">
+          <img src="assets/cocktails-signature.jpg" alt="Signature cocktails" loading="lazy" />
+        </div>
+        <div class="masonry__item masonry__item--wide reveal" data-cat="food" style="--delay:.2s">
+          <img src="assets/dish-lobster-ravioli.jpg" alt="Lobster Ravioli" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.25s">
+          <img src="assets/dish-sea-bass.jpg" alt="Chilean Sea Bass" loading="lazy" />
+        </div>
+        <div class="masonry__item masonry__item--tall reveal" data-cat="cocktails" style="--delay:.3s">
+          <img src="assets/cocktail-old-fashioned.jpg" alt="Old Fashioned cocktail" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.35s">
+          <img src="assets/dish-polpo.jpg" alt="Polpo alla Griglia" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.4s">
+          <img src="assets/dish-salmon-carpaccio.jpg" alt="Salmon Carpaccio" loading="lazy" />
+        </div>
+        <div class="masonry__item masonry__item--wide reveal" data-cat="dining" style="--delay:.45s">
+          <img src="assets/dining-estero.jpg" alt="Divieto Estero dining room" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.5s">
+          <img src="assets/dish-antipasto.jpg" alt="Antipasto della Casa" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.55s">
+          <img src="assets/dish-burrata-pizza.jpg" alt="Burrata Pizza" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.6s">
+          <img src="assets/dessert-tiramisu.jpg" alt="Tiramisù Classico" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.65s">
+          <img src="assets/dessert-creme-brulee.jpg" alt="Crème Brûlée" loading="lazy" />
+        </div>
+        <div class="masonry__item reveal" data-cat="food" style="--delay:.7s">
+          <img src="assets/dish-filet-mignon.jpg" alt="Filet Mignon" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Follow CTA -->
+    <div class="cta-strip cta-strip--dark reveal">
+      <p>Follow us for daily inspiration</p>
+      <a href="https://www.instagram.com/divietoristorante" target="_blank" rel="noopener" class="btn btn--outline btn--gold">@divietoristorante</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html"><img src="assets/logo.png" alt="Divieto Ristorante" class="footer__logo" /></a>
+        <p class="footer__tagline">Italian Cuisine · Est. Miami, Florida</p>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Discover</p>
+          <a href="menus.html">Menus</a>
+          <a href="about.html">Our Story</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="private-dining.html">Private Dining</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Locations</p>
+          <a href="index.html#locations">North Miami Beach</a>
+          <a href="index.html#locations">Doral</a>
+          <a href="index.html#locations">Estero</a>
+          <a href="index.html#locations">Aventura</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Contact</p>
+          <a href="tel:+13054000671">(305) 400-0671</a>
+          <a href="mailto:info@divietoristorante.com">info@divietoristorante.com</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Divieto Ristorante. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Use</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
